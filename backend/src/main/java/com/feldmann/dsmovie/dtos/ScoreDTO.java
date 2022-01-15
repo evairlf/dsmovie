@@ -9,12 +9,12 @@ public class ScoreDTO {
     public ScoreDTO(){
     }
 
-    public Long getMovieID() {
+    public Long getMovieId() {
         return movieId;
     }
 
-    public void setMovieID(Long movieID) {
-        this.movieId = movieID;
+    public void setMovieId(Long movieId) {
+        this.movieId = movieId;
     }
 
     public String getEmail() {

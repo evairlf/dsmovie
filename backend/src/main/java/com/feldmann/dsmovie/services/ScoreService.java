@@ -37,7 +37,7 @@ public class ScoreService {
         }
 
         //findById retorna optional por isso tem que ter o get()
-        Movie movie = movieRepository.findById(dto.getMovieID()).get();
+        Movie movie = movieRepository.findById(dto.getMovieId()).get();
 
         Score score = new Score();
         score.setMovie(movie);
@@ -48,7 +48,7 @@ public class ScoreService {
 
         double sum = 0.0;
         for(Score s : movie.getScores()){
-            sum += s.getValue();
+            sum = sum + s.getValue();
         }
         double avg = sum / movie.getScores().size();
 
